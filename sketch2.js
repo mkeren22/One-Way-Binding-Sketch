@@ -7,7 +7,7 @@ function sketch(parent) { // we pass the sketch data from the parent
     p.setup = function() {
       let canvas = p.createCanvas(400, 200);
       canvas.parent(parent.$el); // links child to parent
-      p.rectMode(p.CENTER);
+      p.ellipseMode(p.CENTER);
     };
 
     p.draw = function() {
