@@ -5,14 +5,14 @@ function sketch(parent) { // we pass the sketch data from the parent
   return function( p ) {
 
     p.setup = function() {
-      let canvas = p.createCanvas(400, 700);
+      let canvas = p.createCanvas(400, 200);
       canvas.parent(parent.$el); // links child to parent
-      p.rectMode(p.center);
+      p.rectMode(p.CENTER);
     };
 
     p.draw = function() {
       p.background(255);
-      p.ellipse(200, 200, parent.data.x, parent.data.y); // expands/contracts based on slider
+      p.ellipse(200, 100, parent.data.x, parent.data.y); // expands/contracts based on slider
     };
   };
 }
